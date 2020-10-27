@@ -139,20 +139,6 @@ function getProducts(){
       price: 15000,
       rest: 8,
       current: 1
-    },
-    {
-      id: 110,
-      title: 'Хуевей ЗЮ',
-      price: 100500,
-      rest: 8,
-      current: 1
-    },
-    {
-      id: 111,
-      title: 'Хуевей МЮ',
-      price: 100500,
-      rest: 7,
-      current: 1
     }
   ];
 }
