@@ -41,20 +41,6 @@ function getProd(){
       price: 5000,
       rest: 2,
       current: 1
-    },
-    {
-      id: 105,
-      title: 'Huawei ZZ',
-      price: 15000,
-      rest: 8,
-      current: 1
-    },
-    {
-      id: 110,
-      title: 'Хуевей ЗЮЗЯ',
-      price: 100500,
-      rest: 8,
-      current: 1
     }
   ];
 };
