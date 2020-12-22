@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+}
+.links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
+}
+.links a {
+  background: #222;
+  color: #fff;
+  /* margin-top: 1px;
+  margin-bottom: 1px; */
+  padding: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.links a:hover {
+  background: #eee;
+  color: #000;
+}

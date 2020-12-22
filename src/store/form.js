@@ -24,7 +24,8 @@ class Form{
   }
 
   @action handleSubmit = (event) => {
-    router.moveTo('result');
+    // router.moveTo('result');
+    this.props.history.push(routesMap.result);
     event.preventDefault();
   }
 

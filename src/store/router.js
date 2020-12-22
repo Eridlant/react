@@ -20,6 +20,7 @@ class Router{
 
   @computed get component(){
     // проверка есть ли роут в списке, если нет -> p404
+    console.log(1);
     return this.routes[this.activeRoute]();
   }
 

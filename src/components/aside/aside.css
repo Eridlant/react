@@ -1,0 +1,8 @@
+#app a.active {
+  background: #101010;
+  color: #2cb0ca;
+}
+
+#app a.active:hover {
+  background: #eee;
+}

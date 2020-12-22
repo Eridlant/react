@@ -2,14 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppMinMax from '~c/inputs/minmax';
 
-import cartModel from '~s/cart.js';
-import router from '~s/router.js';
-
 import {observer} from 'mobx-react';
+import cartModel from '~s/cart.js';
+
+import { routesMap } from '~/routes';
+import { Link } from 'react-router-dom';
 
 @observer
 export default class Cart extends React.Component{
+  
   render(){
+    // console.log(cartModel.products);
+    // console.log(1);
+
     let productsRows = cartModel.products.map((product, i) => {
       return (
         <tr key={product.id}>
@@ -51,9 +56,9 @@ export default class Cart extends React.Component{
         </table>
         <h3>Total: {cartModel.total}</h3>
         <hr/>
-        <button className="btn btn-primary" onClick={() => router.moveTo('order')}>
+        <Link to={routesMap.order} className="btn btn-primary">
           Send
-        </button>
+        </Link>
       </div>
     );
   }
